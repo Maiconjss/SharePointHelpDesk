@@ -3,13 +3,18 @@ import styles from './HelpDesk.module.scss';
 import { IHelpDeskProps } from './IHelpDeskProps';
 import NavBar from '../../../components/NavBar/NavBar';
 import './styles.css';
+import Divisor from '../../../components/Divisor/Divisor';
+import DarkMode from '../../../components/DarkMode/DarkMode';
 
-export default class HelpDesk extends React.Component<IHelpDeskProps, {}> {
-  public render(): React.ReactElement<IHelpDeskProps> {
+const HelpDesk: React.FC<IHelpDeskProps> = ()=> {
     return (
       <div>
         <NavBar/>
+        <Divisor />
+        <DarkMode />
       </div>
     );
-  }
+  
 }
+
+export default HelpDesk;

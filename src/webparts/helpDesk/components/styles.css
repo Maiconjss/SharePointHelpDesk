@@ -1,3 +1,7 @@
 #workbenchPageContent {
     max-width: none;
- }
+ }   
+.headerRow-45, #O365_NavHeader, #sp-appBar,#SuiteNavWrapper ,#SuiteNavPlaceholder{
+    display: none;
+}    
+

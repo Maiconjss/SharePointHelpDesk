@@ -10,6 +10,7 @@ import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import * as strings from 'HelpDeskWebPartStrings';
 import HelpDesk from './components/HelpDesk';
 import { IHelpDeskProps } from './components/IHelpDeskProps';
+import { sp } from '@pnp/sp';
 
 export interface IHelpDeskWebPartProps {
   description: string;
@@ -17,11 +18,22 @@ export interface IHelpDeskWebPartProps {
 
 export default class HelpDeskWebPart extends BaseClientSideWebPart<IHelpDeskWebPartProps> {
 
+  public onInit(): Promise<void> {
+    return super.onInit().then(_ => {
+      sp.setup({
+        spfxContext: this.context
+      });
+    });
+  }
+
+
+
   public render(): void {
     const element: React.ReactElement<IHelpDeskProps> = React.createElement(
       HelpDesk,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        context: this.context
       }
     );
 

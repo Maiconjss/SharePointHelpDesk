@@ -1,6 +1,19 @@
 @import '../../global.module.scss';
 
 .navContainer {
+    height: 80px;
+    padding-left: 30px;
+    padding-right:30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--backgroundNav);
 }
 
+.enterpriseLogo {
+    background-color:transparent;
+}
+
+.userInformation {
+  background-color: transparent;
+}
