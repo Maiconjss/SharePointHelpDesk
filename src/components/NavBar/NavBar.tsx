@@ -5,6 +5,7 @@ import User from '../User/User';
 
 const NavBar: React.FC = () => {
   return (
+    <div className={styles.container}>
     <div className={styles.navContainer}>
 
       <div className={styles.enterpriseLogo}>
@@ -15,6 +16,7 @@ const NavBar: React.FC = () => {
         <User />
       </div>
 
+    </div>
     </div>
   );
 }

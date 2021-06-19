@@ -1,6 +1,13 @@
 @import '../../global.module.scss';
 
+
+.container{
+  background-color: var(--backgroundNav);
+}
+
 .navContainer {
+    max-width: 1280px;
+    margin: 0 auto;
     height: 80px;
     padding-left: 30px;
     padding-right:30px;

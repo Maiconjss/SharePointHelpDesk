@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { Toggle } from 'office-ui-fabric-react';
 
-// import { Container } from './styles';
-
 const DarkMode: React.FC = () => {
 
   return(

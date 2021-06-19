@@ -11,7 +11,6 @@ const HelpDesk: React.FC<IHelpDeskProps> = ()=> {
       <div>
         <NavBar/>
         <Divisor />
-        <DarkMode />
       </div>
     );
   

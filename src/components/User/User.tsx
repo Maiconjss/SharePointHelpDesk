@@ -31,7 +31,6 @@ const User: React.FC = () => {
     return  <Spinner size={SpinnerSize.medium} />;
   }
 
-
   return (
     <div className={styles.userContainer}>
         
