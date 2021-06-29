@@ -9,7 +9,7 @@ const NavBar: React.FC = () => {
     <div className={styles.navContainer}>
 
       <div className={styles.enterpriseLogo}>
-        <Label>SharePoint Help Desk</Label>
+        <Label>SHAREPOINT HELP DESK</Label>
       </div>
 
       <div className={styles.userInformation}>

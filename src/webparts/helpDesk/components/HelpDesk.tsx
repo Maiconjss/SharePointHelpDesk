@@ -4,13 +4,17 @@ import { IHelpDeskProps } from './IHelpDeskProps';
 import NavBar from '../../../components/NavBar/NavBar';
 import './styles.css';
 import Divisor from '../../../components/Divisor/Divisor';
-import DarkMode from '../../../components/DarkMode/DarkMode';
+import OptionsBar from '../../../components/OptionsBar/OptionsBar';
+import BoardStatus from '../../../components/BoardStatus/BoardStatus';
 
 const HelpDesk: React.FC<IHelpDeskProps> = ()=> {
+
     return (
       <div>
         <NavBar/>
         <Divisor />
+        <OptionsBar />
+        <BoardStatus />
       </div>
     );
   
